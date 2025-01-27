@@ -32,14 +32,13 @@ export const Customer = () => {
         setIsDragging(true)
         startX.current = e.touches ? e.touches[0].clientX : e.pageX
         startScrollLeft.current = position
-        e.preventDefault()
+        
     }
 
     const startMoving = (e) => {
         if (!isDragging) return;
 
         const currentX = e.touches ? e.touches[0].clientX : e.pageX
-        console.log(e)
 
         const newPosition = startScrollLeft.current + (currentX - startX.current);
 

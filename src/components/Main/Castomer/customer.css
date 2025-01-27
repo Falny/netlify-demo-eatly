@@ -3,6 +3,7 @@
     margin-top: 116px;
     margin-bottom: 180px;
     user-select: none;
+    touch-action: pan-y;
 }
 
 .customer{
