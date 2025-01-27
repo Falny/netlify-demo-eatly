@@ -1,0 +1,421 @@
+.proplan{
+    margin-top: 650px;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.2);
+    border-radius: 15px;
+    padding: 51px 65px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.proplan-common{
+    display: flex;
+    gap: 0 225px;
+}
+
+.proplan-title-list,
+.proplan-price-list{
+    border-bottom: 1px solid #dedede;
+    margin: 0;
+}
+
+.proplan-item-main{
+    flex: 1;
+}
+
+.proplan-title{
+    color: #282828;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.proplan-title-text{
+    margin: 25px 0 36px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6E757C;
+    font-family: 'Inter', sans-serif;
+}
+
+.proplan-price-item{
+    display: flex;
+    color: #272E35;
+    margin: 40px 0;
+    margin-right: 40px;
+}
+
+.proplan-price-dollar{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.proplan-price_price{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 60px;
+}
+
+.proplan-price_days{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6E757C;
+    display: flex;
+    align-items: end;
+}
+
+.proplan-features{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 50px;
+}
+
+.proplan-plan-list{
+    display: flex;
+    flex-direction: column;
+    gap: 35px 0;
+    padding: 50px 0;
+    border-bottom: 1px solid #dedede;
+    margin: 10px 0;
+}
+
+.proplan-plan-item{
+    display: flex;
+    margin-right: 70px;
+}
+
+.proplan-plan-features{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #606060;
+}
+
+.proplan-plan-icons-box{
+    display: flex;
+    gap: 0 350px;
+}
+
+.proplan-plan-icons{
+    background-color: #6C5FBC;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.proplan-plan-icons-x{
+    background-color: #EB3F5E;
+}
+
+.proplan-btn-list{
+    display: flex;
+    justify-content: end;
+    margin-top: 44px;
+    gap: 0 228px;
+}
+
+.proplan-btn-item{
+    background-color: #6C5FBC;
+    border: none;
+    border-radius: 15px;
+    padding: 17px 26px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #F9F9F9;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 1390px) {
+    .proplan-plan-features{
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .proplan-title {
+        font-size: 32px;
+        line-height: 11px;
+    }
+
+    .proplan-title-text{
+        font-size: 15px;
+    }
+
+    .proplan-price_price{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1175px) {
+    .proplan-common{
+        gap: 35px 200px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .proplan {
+        margin-top: 480px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .proplan-common{
+        gap: 35px 150px;
+    }
+
+    .proplan-plan-icons-box{
+        gap: 0 265px;
+    }
+
+    .proplan-btn-list{
+        gap: 0 175px;
+    }
+}
+
+@media (max-width: 955px) {
+    .proplan {
+        margin-top: 360px;
+    }
+
+    .proplan-title {
+        font-size: 25px;
+        line-height: 0px;
+    }
+
+    .proplan-title-text {
+        font-size: 13px;
+    }
+
+    .proplan-price-item{
+        margin: 15px 40px 15px 0;
+    }
+
+    .proplan-price_price {
+        font-size: 35px;
+    }
+
+    .proplan-price-dollar{
+        font-size: 20px;
+    }
+
+    .proplan-price_days{
+        font-size: 13px;
+    }
+
+    .proplan-plan-icons-box{
+        gap: 0 220px;
+    }
+
+    .proplan-btn-list {
+        gap: 0 125px;
+    }
+
+    .proplan-features{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .proplan-plan-list{
+        padding: 35px 0;
+    }
+
+    .proplan-plan-features {
+        font-size: 17px;
+    }
+
+    .proplan-common {
+        gap: 25px 150px;
+    }
+
+    .proplan-plan-icons {
+        transform: scale(0.85);
+    }
+
+    .proplan-btn-item{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 885px){
+    .proplan {
+        padding: 35px 45px;
+    }
+
+    .proplan-common {
+        gap: 25px 100px;
+    }
+
+    .proplan-plan-icons-box {
+        gap: 0 165px;
+    }
+
+    .proplan-btn-item{
+        padding: 17px 15px;
+    }
+
+    .proplan-btn-list{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 780px) {
+    .proplan {
+        margin-top: 270px;
+    }
+
+    .proplan-title {
+        font-size: 20px;
+    }
+
+    .proplan-title-text {
+        font-size: 13px;
+        margin: 20px 0;
+    }
+
+    .proplan-price_price {
+        font-size: 25px;
+    }
+
+    .proplan-price_days {
+        font-size: 11px;
+    }
+
+    .proplan-price-dollar {
+        font-size: 16px;
+    }
+
+    .proplan-features {
+        font-size: 16px;
+    }
+
+    .proplan-common {
+        gap: 13px 100px;
+    }
+
+    .proplan-plan-features {
+        font-size: 15px;
+    }
+
+    .proplan-plan-icons {
+        transform: scale(0.7);
+    }
+
+    .proplan-btn-item {
+        font-size: 11px;
+        padding: 9px 15px;
+    }
+
+    .proplan-plan-list {
+        padding: 0 0 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .proplan {
+        margin-top: 165px;
+    }
+
+    .proplan-common {
+        gap: 13px 60px;
+    }
+
+    .proplan-plan-icons-box {
+        gap: 0 120px;
+    }
+
+    .proplan-btn-list {
+        gap: 0 100px;
+    }
+}
+
+@media (max-width: 430px) {
+    .proplan {
+        margin-top: 65px;
+        padding: 30px 20px;
+    } 
+
+    .proplan-title {
+        font-size: 14px;
+    }
+
+    .proplan-title-text {
+        font-size: 12px;
+        margin: 15px 0 10px;
+        line-height: 15px;
+    }
+
+    .proplan-common {
+        gap: 13px 10px;
+    }
+
+    .proplan-price-item {
+        margin: 5px 30px 5px 0;
+    }
+
+    .proplan-features {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .proplan-plan-features {
+        font-size: 12px;
+    }
+
+    .proplan-plan-icons-box {
+        gap: 0 60px;
+    }
+
+    .proplan-plan-item {
+        margin-right: 30px;
+    }
+
+    .proplan-btn-list {
+        gap: 0 15px;
+    }
+
+    .proplan-btn-item {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .proplan-btn-list {
+        margin-top: 10px;
+    }
+
+    .proplan-price_price {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .proplan-price-dollar {
+        font-size: 13px;
+    }
+
+    .proplan-plan-icons {
+        transform: scale(0.6);
+    }
+
+}
+
+@media (max-width: 320px) {
+    .proplan-price-item {
+        margin: 5px 20px 5px 0;
+    }
+
+    .proplan-plan-icons-box {
+        gap: 0 45px;
+    }
+
+    .proplan-common {
+        gap: 0px 10px;
+    }
+}

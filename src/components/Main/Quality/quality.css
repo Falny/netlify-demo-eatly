@@ -1,0 +1,186 @@
+.quality{
+    display: flex;
+    padding-top: 105px;
+    border-bottom: 1px solid #dedede;
+}
+
+.quality-left{
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+
+.quality-right{
+    flex: 1;
+    position: relative;
+    padding: 195px 0;
+}
+
+.quality-right-list{
+    margin-bottom: 30px;
+}
+
+.quality-right-item{
+    position: relative;
+    color: #676767;
+    width: 550px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    padding-left: 30px;
+}
+
+
+.quality-right-item::before{
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #676767;
+}
+
+.quality-right-download{
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    background: #6C5FBC;
+    padding: 20px 26px;
+    width: 186px;
+    height: 63px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.quality-right-download-arrow{
+    width: 28px;
+    height: 28px;
+}
+
+.quality-right-download-link{
+    color: #fff;
+}
+
+.quality-right-arrow{
+    position: absolute;
+    bottom: 15%;
+    right: 60%;
+}
+
+.restaurants{
+    padding: 100px 0 120px;
+    border-bottom: 1px solid #dedede;
+}
+
+.title-restaurants{
+    text-align: center;
+}
+
+.restaurants-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.dishes{
+    padding: 100px 0 120px;
+    border-bottom: 1px solid #dedede;
+}
+
+@media (max-width: 1450px) {
+    .restaurants,
+    .dishes{
+        padding: 70px 0;
+    }
+
+    .quality-left {
+        width: 200px;
+        height: 570px;
+        background-size: contain;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+    .quality-right-item{
+        font-size: 18px;
+    }
+
+    .quality-right-download {
+        gap: 10px;
+        padding: 15px;
+        width: 135px;
+        font-size: 14px;
+        height: 50px;
+    }
+
+    .quality-right {
+        padding: 70px 0;
+    }
+
+    .quality {
+        padding-top: 70px;
+    }
+
+    .quality-left{
+        width: 264px;
+        height: 445px;
+        background-size: contain;
+    }
+
+    .quality-right-arrow {
+        bottom: 5%;
+        right: 35%;
+    }
+
+    .quality-right-item{
+        width: 450px;
+    }
+}
+
+@media (max-width: 430px) {
+    .quality{
+        padding-top: 0;
+    }
+
+    .quality-left{
+        display: none;
+    }
+
+    .quality-right {
+        padding: 20px 0 50px;
+    }
+
+    .quality-right-item {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 10px;
+        width: 275px;
+    }
+
+    .quality-right-download {
+        gap: 5px;
+        padding: 10px;
+        width: 115px;
+        font-size: 13px;
+        height: 40px;
+    }
+
+    .quality-right-download-arrow {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 378px) {
+    .quality-right-arrow {
+        right: 10%;
+    }
+}

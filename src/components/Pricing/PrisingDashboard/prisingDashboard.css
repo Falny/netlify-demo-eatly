@@ -1,0 +1,142 @@
+.pricing-box{
+    position: relative;
+    margin-top: 66px;
+}
+
+.pricing-head{
+    background: #5C4EAE;
+    height: 334px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #F9F9F9;
+    padding-top: 44px;
+}
+
+.pricing-head_img{
+    position: absolute;
+    top: 43px;
+    left: 37%;
+}
+
+.pricing-img{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing-img_white-img{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+.pricing-img_purple-img{
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+
+@media (max-width: 1630px){
+    .pricing-head_img {
+        left: 33%;
+    }
+}
+
+@media (max-width: 1420px){
+    .pricing-head_img {
+        left: 30%;
+    }
+}
+
+@media (max-width: 1220px) {
+    .pricing-head_img {
+        left: 27%;
+    }
+}
+
+@media (max-width: 1120px) {
+    .pricing-img{
+        transform: translateX(-50%) scale(0.85);
+        top: 6%;
+    }
+}
+
+@media (max-width: 955px) {
+    .pricing-img{
+        transform: translateX(-50%) scale(0.7);
+        top: -8%;
+    }
+
+    .pricing-head_img {
+        left: 22%;
+    }
+}
+
+@media (max-width: 780px) {
+    .pricing-img {
+        transform: translateX(-50%) scale(0.6);
+        top: -21%;
+    }
+
+    .pricing-head_img{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 700px) {
+    .pricing-box {
+        margin-top: 40px;
+    }
+
+    .pricing-img {
+        transform: translateX(-50%) scale(0.5);
+        top: -40%;
+    }
+
+    .pricing-title {
+        padding-top: 25px;
+    }
+
+    .pricing-head_img {
+        position: absolute;
+        top: 25px;
+    }
+}
+
+@media (max-width: 430px) {
+    .pricing-head_img {
+        transform: scale(0.6);
+        left: 7%;
+    }
+
+    .pricing-img {
+        transform: translateX(-50%) scale(0.35);
+        top: -67%;
+    }
+
+    .pricing-head {
+        height: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .pricing-head_img {
+        left: 0%;
+        top: 5px;
+    }
+
+    .pricing-img {
+        transform: translateX(-50%) scale(0.3);
+        top: -100%;
+    }
+
+    .pricing-head {
+        height: 240px;
+    }
+}

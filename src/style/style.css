@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Public Sans', sans-serif; */
+/* font-family: 'Manrope', sans-serif; */
+
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+.container{
+    margin: 45px 100px;
+}
+
+.title{
+    margin: 0 0 63px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: -1px;
+}
+
+.title-perple{
+    color: #5C4EAE;
+}
+
+
+/* LOGO */
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo-title{
+    font-weight: 700;
+    color: #6C5FBC;
+    font-size: 29px;
+}
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+}
+
+/* LOGO */
+
+
+/* Status */
+
+.status{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.healthy{
+    color: #DAA31A;
+    background: #F7EDD0;
+}
+
+.trending{
+    color: #FB471D;
+    background: #F7C5BA;
+}
+
+.supreme{
+    color: #34a019;
+    background: #c3f5b6;
+}
+
+/* Status */
+
+/* grey arrow view all */
+
+.view-all{
+    display: flex;
+    justify-content: end;
+    margin-top: 65px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45.18px;
+    letter-spacing: -1px;
+    color: #ACADB9;
+    cursor: pointer;
+}
+
+.view-all_arrow{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+/* grey arrow view all */
+
+
+/* time & score */
+
+.time{
+    color: #8E97A6;
+    font-size: 17px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    color: #8E97A6;
+}
+
+.box-time_score{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    position: relative;
+}
+
+/* time & score */
+
+/* lines box */
+
+.lines-box{
+    position: relative;
+}
+
+.lines-img{
+    position: absolute;
+    top: -50%;
+    right: 30%;
+}
+
+/* lines box */
+
+/* REGISTER FORM */
+
+
+/* REGISTER FORM */
+
+@media (max-width: 1450px) {
+    .view-all {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .title{
+        font-size: 35px;
+        line-height: 45px;
+        margin: 0 0 45px;
+    }
+}
+
+@media (max-width: 1160px){
+    .container{
+        margin: 45px 60px;
+    }
+}
+
+@media (max-width: 1050px){
+    .title{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 955px){
+    .title{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .view-all{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 815px){
+    .container{
+        margin: 25px 40px;
+    }
+
+    .logo-title{
+        font-size: 20px;
+    }
+
+    .view-all {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 780px){
+    .title{
+        font-size: 25px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container{
+        margin: 15px 30px;
+    }
+
+    .title{
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        margin: 20px 15px;
+    }
+
+    .view-all{
+        font-size: 15px;
+    }
+
+    .title{
+        font-size: 25px;
+    }
+
+    .lines-img {
+        right: 0%;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo-title {
+        font-size: 20px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+}

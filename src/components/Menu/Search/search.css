@@ -1,0 +1,541 @@
+.menu-weekend{
+    padding-top: 120px;
+    display: flex;
+}
+
+.menu-weekend-left{
+    flex: 2
+}
+
+.menu-weekend-right{
+    flex:1;
+}
+
+.menu-weekend_search-sort{
+    margin-top: 88px;
+    width: 757px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-weekend_search-sort input{
+    width: 100%;
+    height: 75px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    color: #AAABBA;
+    border: none;
+    border-radius: 20px;
+    background-color: #EDEDED;
+    outline: none;
+    padding-left: 50px;
+}
+
+.menu-weekend_search-sort input::placeholder{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    color: #AAABBA;
+}
+
+.menu-weekend-search{
+    position: relative
+}
+
+.search_icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+    color: #AAABBA;
+}
+
+.clear_icon{
+    position: absolute;
+    color: #AAABBA;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    cursor: pointer;
+}
+
+.menu-weekend-sort{
+    margin-top: 35px;
+    width: 100%;
+   
+}
+
+.menu-weekend-sort button{
+    width: 50%;
+    border: 1px solid #6C5FBC;
+    height: 75px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 29px;
+    color: #6C5FBC;
+}
+
+.menu-weekend-sort button.active{
+    background-color: #6C5FBC;
+    color: #fff;
+}
+
+.menu-weekend-sort button:nth-child(1){
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.menu-weekend-sort button:nth-child(2){
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu-weekend-right-box{
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+    padding: 32px 34px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 377px;
+    user-select: none;
+}
+
+.menu-weekend-img{
+    font-size: 15px;
+}
+
+.menu-weekend-title{
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #323142;
+}
+
+.menu-weekend-food-status{
+    width: 73px;
+    height: 107px;
+    border-radius: 10px;
+    padding: 16px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yellow_category{
+    color: #D69900;
+    background-color: #FFDE8A;
+}
+
+.red_category{
+    color: #FB471D;
+    background-color: rgba(251, 71, 29, 0.5);
+}
+
+.brown_category{
+    color: #E28B14;
+    background-color: #EDB66B;
+}
+
+.blue_category{
+    color: #002073;
+    background-color: #5A85FF;
+}
+
+.yellow_category-active{
+    font-weight: 700;
+    border: 2px solid #D69900;
+}
+
+.red_category-active{
+    font-weight: 700;
+    border: 2px solid #FB471D;
+}
+
+.brown_category-active{
+    font-weight: 700;
+    border: 2px solid #E28B14;
+}
+
+.blue_category-active{
+    font-weight: 700;
+    border: 2px solid #002073;
+}
+
+.menu-weekend-food{
+    display: flex;
+    gap: 12px;
+}
+
+.menu-sortby-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 97px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 29px;
+    color: #ACADB9;
+}
+
+.menu-weekend-sortby{
+    cursor: pointer;
+}
+
+.menu-weekend-sortby-active{
+    color: #6C5FBC
+}
+
+.menu-weekend-ratio{
+    position: relative;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #6C5FBC;
+}
+
+.menu-weekend-ratio-circle{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: -9px;
+    background-color: #6C5FBC;
+    border-radius: 50%;
+    border: 4px solid #BBB6D7;
+    cursor: grab;
+    
+}
+
+.menu-weekend-title_price{
+    position: relative;
+}
+
+.menu-weekend-under-price{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #6C5FBC;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #6C5FBC;
+    padding: 0 1px;
+    outline: none;
+}
+
+.menu-weekend-price{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #C2C3CB;
+}
+
+.menu-weekend-right-btn{
+    border: none;
+    border-radius: 15px;
+    background-color: #6C5FBC;
+    color: #FFF3EB;
+    padding: 20px 120px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 1380px) {
+    .menu-weekend-left{
+        margin-right: 30px;
+    }
+
+    .menu-weekend-right-box {
+        padding: 20px;
+        gap: 15px;
+        width: 350px;
+    }
+
+    .menu-weekend-title {
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .menu-weekend-food-status {
+        height: 95px;
+        padding: 12px 10px;
+    }
+
+    .menu-sortby-box {
+        gap: 5px 97px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .menu-weekend {
+        padding-top: 80px;
+    }
+
+    .menu-weekend_search-sort{
+        margin-top: 50px;
+    }
+
+    .menu-weekend_search-sort {
+        width: 655px;
+    }
+
+    .menu-weekend-right-box{
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 1225px) {
+    .menu-weekend-right-box{
+        width: 313px;
+    }
+
+    .menu-sortby-box {
+        gap: 5px 50px;
+    }
+
+    .menu-weekend-price {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .menu-weekend {
+        padding-top: 50px;
+    }
+
+    .menu-weekend_search-sort {
+        width: 580px;
+    }
+
+    .menu-weekend_search-sort input,
+    .menu-weekend_search-sort input::placeholder{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 1030px) {
+    .menu-weekend_search-sort {
+        width: 500px;
+    }
+
+    .menu-weekend-sort button{
+        font-size: 17px;
+    }
+
+    .menu-weekend-img {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 955px){
+    .menu-weekend_search-sort{
+        width: 420px;
+    }
+
+    .menu-weekend_search-sort input,
+    .menu-weekend-sort button{
+        height: 55px;
+    }
+
+    .menu-weekend_search-sort input,
+    .menu-weekend_search-sort input::placeholder{
+        font-size: 15px;
+    }
+
+    .clear_icon{
+        right: 3%;
+    }
+
+    .search_icon{
+        left: 3%;
+    }
+
+    .menu-weekend-food-status {
+        height: 75px;
+        padding: 5px 10px;
+    }
+
+    .menu-weekend-title {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .menu-weekend-right-box {
+        width: 295px;
+    }
+}
+
+@media (max-width: 850px){
+    .menu-weekend-food-status{
+        width: 45px;
+    }
+
+    .menu-weekend-right-box {
+        width: 250px;
+    }
+
+    .menu-weekend-right-btn{
+        padding: 20px;
+    }
+
+    .menu-weekend-price {
+        gap: 12px;
+    }
+
+    .menu-sortby-box {
+        gap: 5px 10px;
+    }
+
+    .menu-weekend-sortby{
+        font-size: 14px;
+    }
+
+    .menu-weekend {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 780px) {
+    .menu-weekend_search-sort {
+        width: 360px;
+    }
+
+    .menu-weekend-ratio-circle {
+        width: 18px;
+        height: 18px;
+    }
+
+    .menu-sortby-box {
+        gap: 0 10px;
+    }
+
+    .menu-weekend {
+        padding-top: 25px;
+    }
+
+    .menu-weekend-sort button {
+        font-size: 14px;
+    }
+
+    .menu-weekend-right-btn{
+        font-size: 12px;
+    }
+
+    .menu-weekend-title {
+        margin-bottom: 4px;
+        font-size: 16px;
+    }
+
+    .menu-weekend-img {
+        font-size: 12px;
+    }
+
+    .menu-weekend-sortby {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 715px){
+    .menu-weekend{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-weekend_search-sort,
+    .menu-weekend-right-box{
+        width: 575px;
+    }
+
+    .menu-weekend-food,
+    .menu-sortby-box {
+        gap: 30px;
+    }
+
+    .menu-weekend-food-status {
+        width: 65px;
+    }
+
+    .menu-weekend-food{
+        justify-content: center;
+    }
+
+    .menu-sortby-box{
+        justify-content: center;
+    }
+
+    .menu-weekend-price {
+        gap: 77px;
+    }
+}
+
+@media (max-width: 660px){
+    .menu-weekend_search-sort, 
+    .menu-weekend-right-box {
+        width: 525px;
+    }
+}
+
+@media (max-width: 430px){
+    .menu-weekend_search-sort, 
+    .menu-weekend-right-box {
+        width: 345px;
+    }
+
+    .menu-weekend-price {
+        gap: 32px;
+    }
+
+    .menu-weekend-food, 
+    .menu-sortby-box {
+        gap: 15px;
+    }
+
+    .carousel-lines {
+        top: -27%;
+        right: -14%;
+    }
+}
+
+@media (max-width: 380px){
+    .menu-weekend_search-sort, 
+    .menu-weekend-right-box {
+        width: 333px;
+    }
+}
+
+@media (max-width: 325px){
+    .menu-weekend_search-sort, 
+    .menu-weekend-right-box {
+        width: 300px;
+    }
+
+    .menu-weekend-price {
+        gap: 24px;
+    }
+
+    .menu-sortby-box {
+        gap: 5px 15px;
+        justify-content: start;
+    }
+
+    .question-question {
+        line-height: 20px;
+    }
+}

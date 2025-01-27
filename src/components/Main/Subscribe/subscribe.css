@@ -1,0 +1,213 @@
+.subscribe{
+    padding: 102px 0 216px 46px;
+}
+
+.subcsribe-img{
+    position: relative;
+    width: 100%;
+    min-height: 280px;
+    background-repeat: no-repeat, repeat;
+    background-position: center, center;
+    background-size: cover, contain;
+    background-blend-mode: overlay;
+    border-radius: 30px;
+}
+
+.subscribe-box{
+    display: flex;
+    flex-direction: column;
+    padding: 37px 66px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.subscribe-title{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 105px;
+}
+
+.subscribe-email{
+    position: relative;
+    letter-spacing: 1px;
+    width: fit-content
+}
+
+.subscribe-input{
+    width: 440px;
+    height: 68px;
+    border-radius: 15px;
+    padding: 21px;
+    border: none;
+    outline: none;
+    color: #878787;
+    font-size: 16px;
+}
+
+.subscribe-input::placeholder{
+    color: #878787;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.subscribe-subscribe{
+    position: absolute;
+    width: 132px;
+    height: 54px;
+    background-color: #6C5FBC;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    border: none;
+    border-radius: 10px;
+    color: #F7F8FA;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    cursor: pointer;
+}
+
+.subcsribe_dish-img{
+    position: absolute;
+    bottom: -60px;
+    right: 72px;
+    background-repeat: no-repeat;
+    width: 276px;
+    height: 276px;
+}
+
+@media (max-width: 1070px) {
+    .subscribe {
+        padding: 90px 0 120px 46px;
+    }
+
+    .subcsribe_dish-img{
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+
+    .subscribe-title{
+        font-size: 50px;
+    }
+
+    .subscribe-input{
+        width: 300px;
+    }
+
+    .subscribe-input::placeholder{
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .subscribe-subscribe {
+        width: 100px;
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .subcsribe-img{
+        min-height: 240px;
+    }
+
+    .subscribe-box{
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .subscribe {
+        padding: 75px 0 90px;
+    }
+
+    .subcsribe_dish-img{
+        width: 155px;
+        height: 160px;
+    }
+
+    .subcsribe_dish-img{
+        right: 35px;
+    }
+
+    .subscribe-title{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 430px) {
+    .subscribe {
+        padding: 20px 0 40px;
+    }
+
+    .subscribe-title{
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .subscribe-subscribe{
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .subscribe-input{
+        height: 50px;
+    }
+}
+
+@media (max-width: 380px) {
+    .subscribe-input {
+        width: 270px;
+        height: 40px;
+        padding: 10px;
+    }
+
+    .subscribe-subscribe{
+        height: 33px;
+        width: 77px;
+        font-size: 10px;
+    }
+
+    .subcsribe-img {
+        min-height: 185px;
+    }
+
+    .subcsribe_dish-img {
+        width: 125px;
+        height: 127px;
+    }
+
+    .subscribe-title {
+        font-size: 25px;
+    }
+
+    .subscribe-input{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 325px) {
+    .subscribe-box {
+        padding: 20px 10px;
+    }
+
+    .subcsribe_dish-img {
+        width: 95px;
+        height: 95px;
+        bottom: -40px;
+    }
+
+    .subcsribe-img {
+        min-height: 165px;
+    }
+}
+
+@media (max-width: 430px) {
+    .subscribe {
+        padding: 20px 0 75px;
+    }
+}

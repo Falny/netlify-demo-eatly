@@ -1,0 +1,359 @@
+.purchases{
+    display: flex;
+    padding: 103px 0 140px;
+    border-bottom: 1px solid #dedede;
+}
+
+.purchases-left{
+    flex: 1;
+}
+
+.purchases-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.purchases-item{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 345px;
+    height: 88px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.1);
+    padding: 5px 17px;
+    font-family: 'Poppins', sans-serif;
+    color: #323142;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.purchases-item:hover{
+    box-shadow: 0 0 30px rgba(0,0,0, 0.2);
+    transition: box-shadow .3s ease;
+}
+
+.purchases-item-box{
+    display: flex;
+    align-items: center;
+    gap:19px;
+}
+
+.purchases-item-box img{
+    width: 77px;
+    height: 80px;
+}
+
+.purchases-item-title{
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 27px;
+}
+
+.purchases-item-mini-title{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.purchases-grow-red{
+    color: red;
+}
+
+.purchases-item-time{
+    color: #ACADB9;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.purchases-right{
+    flex: 1;
+}
+
+.purchases-right-box{
+    width: fit-content;
+    border: 1px solid #EDF2F7;
+}
+
+.purchases-right-item{
+    padding: 25px;
+    width: 458px;
+    height: 135px;
+    border: 2px solid #EDF2F7;
+    border-radius: 30px;
+}
+
+.purchases-right-box{
+    padding: 46px 41px;
+    box-shadow: 0 30px 50px rgba(0,0,0, 0.1);
+    border-radius: 30px;
+    font-family: 'Manrope', sans-serif;
+    color: #1A202C;
+    font-weight: 800;
+}
+
+.purchases-right-list{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 41px;
+}
+
+.purchases-right-item-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purchases-right-item-box{
+    display: flex;
+    gap: 19px;
+}
+
+.purchases-right-item-title{
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.purchases-right-item-grow{
+    color: #A0AEC0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.purchases-right-item-price{
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.purchases-right-item-line{
+    margin-top: 20px;
+    height: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.purchases-right-item-grow_line{
+    height: 10px;
+    border-radius: 10px;
+}
+
+.purchases-right-line-perple{
+    background-color: #6C5FBC;
+}
+
+.purchases-right-line-orange{
+    background-color: #FBAD18;
+}
+
+.purchases-right_main-line-perple{
+    background-color: #cbc3ff;
+}
+
+.purchases-right_main-line-orange{
+    background-color: #ffdfa5;
+}
+
+.purchases-right-head{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: #1A202C;
+    font-family: 'Manrope', sans-serif;
+}
+
+.purchases-right-title{
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.purchases-right-select-container{
+    background-color: #FAFAFA;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 28px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    user-select: none;
+}
+
+.purchases-right-select-head{
+    display: flex;
+}
+
+.purchases-right-select-current{
+    width: 70px;
+}
+
+.purchases-right-option{
+    margin-top: 10px;
+}
+
+@media (max-width: 1255px) {
+    .purchases-right-item{
+        width: 400px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .purchases-right-item{
+        width: 360px;
+        height: 120px;
+        padding: 15px;
+    }
+
+    .purchases-right-box{
+        margin-left: 50px;
+        padding: 30px 40px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .purchases-right-title{
+        font-size: 22px;
+    }
+
+    .purchases-right-select-current{
+        width: 50px;
+    }
+
+    .purchases-right-select-container{
+        font-size: 17px;
+    }
+
+    .purchases-right-list{
+        margin-top: 27px;
+    }
+
+    .purchases-right{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .purchases-right-item-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .purchases-right-item-grow {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .purchases-right-item-line {
+        margin-top: 9px;
+    }
+
+    .purchases-right-item-price {
+        font-size: 18px;
+        line-height: 0px;
+    }
+
+    .purchases-right-box{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .purchases{
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0;
+    }
+
+    .purchases-left{
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 430px) {
+    .purchases {
+        padding: 20px 0;
+    }
+
+    .purchases-right-box {
+        padding: 15px 20px;
+        margin-left: 0;
+    }
+
+    .purchases-item-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .purchases-item-box img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .purchases-item-time {
+        font-size: 11px;
+    }
+
+    .purchases-item{
+        width: 290px;
+    }
+
+    .purchases-right-title {
+        font-size: 18px;
+    }
+
+    .purchases-right-select-container {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .purchases-right-item-title {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .purchases-right-item-grow {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .purchases-right-item-price {
+        font-size: 14px;
+    }
+
+    .purchases-right-item-line{
+        height: 7px;
+    }
+
+    .purchases-right-item-grow_line {
+        height: 7px;
+    }
+
+    .purchases-right-item {
+        width: 275px;
+        height: 101px;
+        padding: 11px;
+        border-radius: 19px;
+    }
+}
+
+@media (max-width: 320px) {
+    .purchases-right-item {
+        width: 260px;
+        height: 95px;
+    }
+
+    .purchases-item-title {
+        font-size: 13px;
+    }
+
+    .purchases-item-mini-title {
+        font-size: 11px;
+        line-height: 12px;
+    }
+}

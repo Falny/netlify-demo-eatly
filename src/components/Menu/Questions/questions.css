@@ -1,0 +1,129 @@
+.question{
+    padding: 171px 0 164px;
+}
+
+.question-title{
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.question-box{
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid #dedede;
+}
+
+.question-box-img{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question-question{
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 59px;
+    color: #323142;
+    margin-top: 28px;
+}
+
+.question-answer{
+    font-size: 20px;
+    line-height: 32px;
+    color: #686868;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+
+.question-answer.active{
+    max-height: 100px;
+    padding: 20px 0 43px;
+}
+
+.question-answer.disactive{
+    max-height: 0;
+    padding: 0;
+}
+
+.question-circle{
+    width: 30px;
+    height: 30px;
+    background-color: #6C5FBC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    .question-question{
+        font-size: 20px;
+    }
+
+    .question-answer{
+        font-size: 17px;
+    }
+
+    .question-answer.active{
+        padding: 15px 0;
+    }
+
+    .question {
+        padding: 120px 0 65px;
+    }
+}
+
+@media (max-width: 955px){
+    .question {
+        padding: 88px 0 15px;
+    }
+
+    .question-question{
+        font-size: 18px;
+    }
+
+    .question-answer{
+        font-size: 15px;
+    }
+
+    .question-answer.active{
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .question-question {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .question-answer{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .question-answer.active{
+        padding: 0;
+    }
+
+    .question {
+        padding: 60px 0 15px;
+    }
+}
+
+@media (max-width: 380px){
+    .question-circle {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 325px){
+    .lines-img{
+        display: none;
+    }
+}

@@ -1,0 +1,163 @@
+.blog-title{
+    font-weight: 600;
+    text-align: center;
+}
+
+.articles-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 75px 120px;
+    gap: 71px 30px;
+}
+
+.articles-list-item{
+    box-shadow: 0 0 30px rgba(0,0,0, 0.2);
+    border-radius: 15px;
+    padding: 25px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #252525;
+    height: fit-content;
+}
+
+.articles-item-img{
+    cursor: pointer;
+    width: 311px;
+    height: 273px;
+
+}
+
+.articles-item-title{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.articles-item-box{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.articles-item-left{
+    display: flex;
+    gap: 0 11px;
+}
+
+.articles-item-writter{
+    font-size: 11px;
+    line-height: 18px;
+    color: #8D8D8D;
+}
+
+.articles-item-nick{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    color: #000;
+}
+
+.articles-item-data{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 31px;
+    color: #B7B4B4;
+}
+
+.arrow{
+    cursor: pointer;
+}
+
+.articles-arrows{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    transform: scale(2);
+    color: #CECECE;
+}
+
+.active{
+    color: #605E5E;
+}
+
+@media (max-width: 1450px) {
+    .articles-list {
+        margin: 75px 30px;
+        gap: 60px 30px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .articles-list {
+        gap: 60px 10px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .articles-item-img {
+        width: 240px;
+        height: 220px;
+    }
+
+    .articles-item-title {
+        font-size: 18px;
+        line-height: 10px;
+        margin: 15px 0;
+    }
+
+    .articles-list-item {
+        padding: 20px 15px;
+        width: fit-content;
+    }
+
+    .articles-item-nick {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .articles-item-data{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 955px) {
+    .articles-list {
+        margin: 75px 0px
+    }
+}
+
+@media (max-width: 780px) {
+    .articles-list {
+        margin: 40px 0px;
+    }
+
+    .articles-item-title {
+        font-size: 15px;
+        line-height: 0px;
+    }
+
+    .articles-item-nick {
+        font-size: 13px;
+    }
+
+    .articles-item-data {
+        font-size: 12px;
+    }
+
+    .articles-list {
+        gap: 25px 10px;
+    }
+
+    .arrow{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 645px) {
+    .articles-item-img {
+        width: 200px;
+        height: 185px;
+    }
+}

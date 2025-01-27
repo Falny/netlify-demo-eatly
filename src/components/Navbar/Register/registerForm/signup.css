@@ -1,0 +1,207 @@
+.register-common-form{
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.register-common-form-title{
+    font-weight: 600;
+    font-size: 35px;
+    color: #323142;
+}
+
+.register-common-form-mini-title{
+    font-weight: 500;
+    font-size: 23px;
+    color: #CFCFD3;
+    margin: 24px 0 50px;
+}
+
+.register-common-form-link{
+    margin: 48px 0 33px;
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+}
+
+.register-common-form-link-outside{
+    width: 183px;
+    padding: 15px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.register-common-form-text{
+    color: rgba(0, 90, 100, 0.35);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.register-common-form-form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-common{
+    background-color: #F5F5F5;
+    width: 382px;
+    height: 74px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #6C5FBC;
+    border: none;
+    outline: 2px solid transparent;
+    letter-spacing: 1px;
+    padding-left: 55px;
+}
+
+.input-active{
+    outline-color: #6C5FBC;
+}
+
+.form-common::placeholder{
+    font-weight: 400;
+    font-size: 17px;
+    color: #C2C3CB;
+}
+
+.common-signup-box{
+    position: relative;
+}
+
+.common-icon{
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+}
+
+.common-icon-active *{
+    fill: #6C5FBC;
+}
+
+.register-common-form-btn{
+    height: 74px;
+    width: 382px;
+    background-color: #6C5FBC;
+    border-radius: 10px;
+    border: none;
+    color: #F3F5F6;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.register-common-form-login{
+    font-size: 18px;
+    margin-top: 23px;
+}
+
+.reg-log{
+    color: #6C5FBC;
+    font-weight: 500;
+}
+
+.show-pass{
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.forget-password{
+    text-align: end;
+    font-size: 16px;
+    color: #6C5FBC;
+}
+
+@media (max-width: 1110px) {
+    .register-common-form-title{
+        font-size: 30px;
+    }
+
+    .register-common-form-link-outside {
+        width: 155px;
+    }
+
+    .register-common-form-link {
+        margin: 30px 0 15px
+    }
+
+    .form-common {
+        width: 335px;
+        height: 63px;
+    }
+
+    .register-common-form-btn {
+        height: 63px;
+        font-size: 15px;
+    }
+
+    .register-common-form-login {
+        font-size: 15px;
+    }
+
+    .register-footer{
+        font-size: 13px;
+    }
+
+    .form-common::placeholder{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 950px){
+    .register-common-form-title {
+        font-size: 25px;
+    }
+
+    .register-common-form-link-outside {
+        width: 110px;
+    }
+
+    .register-common-form-link {
+        margin: 15px 15px;
+    }
+
+    .register-common-form-text{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .form-common,
+    .register-common-form-btn {
+        width: 245px;
+        height: 50px;
+    }
+
+    .register-common-form-login,
+    .register-footer {
+        font-size: 13px;
+    }
+
+    .form-common{
+        font-size: 13px;
+    }
+
+    .form-common::placeholder{
+        font-size: 13px;
+    }
+
+    .form-icon{
+        transform: scale(0.8);
+    }
+
+    .common-icon,
+    .show-pass{
+        transform: translateY(-50%) scale(0.8);
+    }
+}
