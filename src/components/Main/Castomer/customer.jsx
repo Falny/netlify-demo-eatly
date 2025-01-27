@@ -67,7 +67,17 @@ export const Customer = () => {
         <div className="container-carousel">
             <div className="customer">
                 <h2 className="title customer-title"><span className="title-perple">Customer</span> Say</h2>
-                <ul style={{transform: `translateX(${position}px)`}} className="customer-list" ref={carouselRef} onMouseDown={startMove} onMouseMove={startMoving} onMouseUp={endMoving}>
+                <ul 
+                style={{transform: `translateX(${position}px)`}}
+                className="customer-list" 
+                ref={carouselRef}
+                onMouseDown={startMove}
+                onMouseMove={startMoving}
+                onMouseUp={endMoving}
+                onTouchStart={startMove}
+                onTouchMove={startMoving}
+                onTouchEnd={endMoving}
+                >
                     {carousel.map((elem, index) => (
                         <li key={elem.id} className={`customer-item ${index === activeIndex ? 'active-carousel' : ''}`} ref={el => itemRef.current[index] = el}>
                              {index === activeIndex && 

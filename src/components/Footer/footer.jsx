@@ -7,6 +7,8 @@ import {ReactComponent as In} from '../../images/footer/in.svg'
 import {ReactComponent as Facebook} from '../../images/footer/facebook.svg'
 import {ReactComponent as Twitter} from '../../images/footer/twitter.svg'
 
+import {NavLink} from 'react-router-dom'
+
 const Footer = () => {
     return (
         <>
@@ -20,10 +22,10 @@ const Footer = () => {
                             </div>
                             <nav className="footer-main-nav">
                                 <ul className="footer-main-nav-list">
-                                    <li className="footer-list-item"><a href="#" className='footer-item-link'>Blog</a></li>
-                                    <li className="footer-list-item"><a href="#" className='footer-item-link'>Pricing</a></li>
-                                    <li className="footer-list-item"><a href="#" className='footer-item-link'>About Us</a></li>
-                                    <li className="footer-list-item"><a href="#" className='footer-item-link'>Contact</a></li>
+                                    <li className="footer-list-item"><NavLink to="/blog" className='footer-item-link'>Blog</NavLink></li>
+                                    <li className="footer-list-item"><NavLink to="/price" className='footer-item-link'>Pricing</NavLink></li>
+                                    <li className="footer-list-item"><NavLink to="#" className='footer-item-link'>About Us</NavLink></li>
+                                    <li className="footer-list-item"><NavLink to="/contact" className='footer-item-link'>Contact</NavLink></li>
                                 </ul>
                             </nav>
                         </div>
