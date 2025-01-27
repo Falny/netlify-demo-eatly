@@ -29,15 +29,16 @@ const InsideRest = (props) => {
 
     const clickAddCart = (current) => {
         const index = cart.findIndex(val => val.id === current.id)
+
         if (index !== -1) {
             setCart((cart) => {
                 const newCart = [...cart];
-                newCart[index] = {...newCart[index], count: {value: newCart[index].count.value+1}}
+                newCart[index] = {...newCart[index], count: newCart[index].count+1}
                 return newCart
             })
         } else {
             setCart(cart => {
-                const newCart = [...cart, {id: current.id, name: current.name, img: current.img, time: parseInt(current.time.slice(0, 2)), price: current.price, count: {value: current.count.value+1}}]
+                const newCart = [...cart, {id: current.id, name: current.name, img: current.img, time: parseInt(current.time.slice(0, 2)), price: current.price, count: current.count+1}]
                 localStorage.setItem('cart', JSON.stringify(newCart))
                 return newCart
             })

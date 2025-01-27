@@ -2,7 +2,7 @@ import React from 'react'
 import './cart.css'
 
 import { contextCart } from '../../App'
-import {MoveLeft, ChevronLeft, ChevronRight, CircleX} from 'lucide-react'
+import {MoveLeft} from 'lucide-react'
 import {Link} from 'react-router-dom'
 
 import {Decimal} from 'decimal.js'
@@ -13,9 +13,9 @@ const Cart = () => {
 
     const handleArrowLeft = (_id) => {
         setCart(cart => {
-            const lowDish = cart.map((el) => el.id === _id && el.count.value >= 1 ? {...el, count: {value: el.count.value-1}} : el)
+            const lowDish = cart.map((el) => el.id === _id && el.count >= 1 ? {...el, count: el.count-1} : el)
 
-            const deleteDish = lowDish.filter(item => item.count.value > 0)
+            const deleteDish = lowDish.filter(item => item.count > 0)
             localStorage.setItem('cart', JSON.stringify(deleteDish))
             return deleteDish
         })
@@ -23,7 +23,7 @@ const Cart = () => {
 
     const handleArrowRight = (_id) => {
         setCart(cart => {
-            const highDish = cart.map((el) => el.id === _id && el.count.value >= 1 ? {...el, count: {value: el.count.value+1}} : el)
+            const highDish = cart.map((el) => el.id === _id && el.count >= 1 ? {...el, count: el.count+1} : el)
             localStorage.setItem('cart', JSON.stringify(highDish))
             return highDish
         })
@@ -33,6 +33,8 @@ const Cart = () => {
     const handleSumbitCart = (e) => {
         e.preventDefault()
     }
+
+    console.log(cart)
 
     return (
         <>
@@ -54,10 +56,10 @@ const Cart = () => {
                                 <div className="cart-block-rice-count">
                                     <div className="cart-count-dish">
                                         <div className='cart-arrow cart-arrow-left' onClick={() => handleArrowLeft(elem.id)}>-</div>
-                                        <p className="cart-count">{elem.count.value}</p>
+                                        <p className="cart-count">{elem.count}</p>
                                         <div className='cart-arrow cart-arrow-right' onClick={() => handleArrowRight(elem.id)}>+</div>
                                     </div>
-                                    <p className="cart-price">${Decimal(elem.count.value * parseFloat(elem.price)).toFixed(2)}</p>
+                                    <p className="cart-price">${Decimal(elem.count * parseFloat(elem.price)).toFixed(2)}</p>
                                 </div>
                             </li>
                         </ul>
@@ -65,15 +67,15 @@ const Cart = () => {
                     {cart.length > 0 && <div className="cart-all">
                         <div className="cart-common-item cart-all-time">
                             <p className="cart-all-title">Cooking time</p>
-                            <p className="cart-all-price">~{Decimal(cart.reduce((sum, elem) => sum + (elem.time * elem.count.value), 0)/cart.length, 0).toFixed(0)}min</p>
+                            <p className="cart-all-price">~{Decimal(cart.reduce((sum, elem) => sum + (elem.time * elem.count), 0)/cart.length, 0).toFixed(0)}min</p>
                         </div>
                         <div className="cart-common-item cart-all-count">
                             <p className="cart-all-title">Count</p> 
-                            <p className="cart-all-price">{cart.reduce((sum, elem) => sum + elem.count.value, 0)}</p>
+                            <p className="cart-all-price">{cart.reduce((sum, elem) => sum + elem.count, 0)}</p>
                         </div>
                         <div className="cart-common-item cart-all-money">
                             <p className="cart-all-title">Total</p>
-                            <p className="cart-all-price">${Decimal(cart.reduce((sum, elem) => sum + (parseFloat(elem.price) * elem.count.value), 0)).toFixed(2)}</p>
+                            <p className="cart-all-price">${Decimal(cart.reduce((sum, elem) => sum + (parseFloat(elem.price) * elem.count), 0)).toFixed(2)}</p>
                         </div>
                         <button type='submit' className="cart-order">Review Payment</button>
                     </div>}
