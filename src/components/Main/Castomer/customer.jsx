@@ -30,14 +30,17 @@ export const Customer = () => {
 
     const startMove = (e) => {
         setIsDragging(true)
-        startX.current = e.pageX
+        startX.current = e.touches || e.pageX
         startScrollLeft.current = position
+        
     }
 
     const startMoving = (e) => {
         if (!isDragging) return;
 
-        const newPosition = startScrollLeft.current + (e.pageX - startX.current);
+        const currentX = e.touches || e.pageX
+
+        const newPosition = startScrollLeft.current + (currentX - startX.current);
 
         const widthCarousel = carouselRef.current.scrollWidth;
         const widthUserView = carouselRef.current.clientWidth;
