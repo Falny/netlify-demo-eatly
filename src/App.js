@@ -56,34 +56,34 @@ function App() {
 
   const restaurantsArr = [
     {id: uuidv4(), name: 'The Chicken King', status: 'Healthy', time: '24min', score: '4.8', isSave: true, img: Chicken, category: 'asian', sortby: 'recomended', goods: [
-      {id: uuidv4(), img: Dish1, name: 'Chicken Hell1', price: '12.99', score: '4.8', status: 'Healthy', time: '24min', count: 0, isLike: false, category: 'asian', sortby: 'recomended', count: 0},
-      {id: uuidv4(), img: Dish2, name: 'Swe Dish1', price: '19.99', score: '4.9', status: 'Trending', time: '34min', count: 0, isLike: false, category: 'asian', sortby: ['recomended', 'most popular'], count: 0},
-      {id: uuidv4(), img: Dish3, name: 'Swe Dish2', price: '19.99', score: '4.9', status: 'Supreme', time: '34min', count: 0, isLike: false, category: 'asian', sortby: ['recomended', 'most popular'], count: 0},
+      {id: uuidv4(), img: Dish1, name: 'Chicken Hell1', price: '12.99', score: '4.8', status: 'Healthy', time: '24min', count: 0, isLike: false, category: 'asian', sortby: 'recomended', count: {value: 0}},
+      {id: uuidv4(), img: Dish2, name: 'Swe Dish1', price: '19.99', score: '4.9', status: 'Trending', time: '34min', count: 0, isLike: false, category: 'asian', sortby: ['recomended', 'most popular'], count: {value: 0}},
+      {id: uuidv4(), img: Dish3, name: 'Swe Dish2', price: '19.99', score: '4.9', status: 'Supreme', time: '34min', count: 0, isLike: false, category: 'asian', sortby: ['recomended', 'most popular'], count: {value: 0}},
     ]},
     {id: uuidv4(), name: 'The Burger King', status: 'Trending', time: '22min', score: '4.9', isSave: true, img: Burger, category: 'asian', sortby: ['most popular', 'fast delivery'], goods: [
-      {id: uuidv4(), img: Dish2, name: 'Burger', price: '19.99', score: '4.9', status: 'Trending', time: '34min', count: 0, isLike: false, category: 'asian', sortby: ['recomended', 'most popular'], count: 0},
-      {id: uuidv4(), img: Dish3, name: 'Fish Burger', price: '19.99', score: '4.9', status: 'Supreme', time: '34min', count: 0, isLike: false, category: 'asian', sortby: 'recomended', count: 0},
-      {id: uuidv4(), img: Dish4, name: 'Nagets', price: '12.99', score: '5.0', status: 'Healthy', time: '24min', count: 0, isLike: true, category: 'asian', sortby: ['recomended', 'most popular'], count: 0},
-      {id: uuidv4(), img: Dish2, name: 'Fri', price: '19.99', score: '4.7', status: 'Trending', time: '34min', count: 0, isLike: true, category: 'asian', sortby: 'recomended', count: 0},
+      {id: uuidv4(), img: Dish2, name: 'Burger', price: '19.99', score: '4.9', status: 'Trending', time: '34min', count: 0, isLike: false, category: 'asian', sortby: ['recomended', 'most popular'], count: {value: 0}},
+      {id: uuidv4(), img: Dish3, name: 'Fish Burger', price: '19.99', score: '4.9', status: 'Supreme', time: '34min', count: 0, isLike: false, category: 'asian', sortby: 'recomended', count: {value: 0}},
+      {id: uuidv4(), img: Dish4, name: 'Nagets', price: '12.99', score: '5.0', status: 'Healthy', time: '24min', count: 0, isLike: true, category: 'asian', sortby: ['recomended', 'most popular'], count: {value: 0}},
+      {id: uuidv4(), img: Dish2, name: 'Fri', price: '19.99', score: '4.7', status: 'Trending', time: '34min', count: 0, isLike: true, category: 'asian', sortby: 'recomended', count: {value: 0}},
     ]},
     {id: uuidv4(), name: 'The Rolyal King', status: 'Supreme', time: '27min', score: '4.7', isSave: false, img: Chicken, category: 'pizza', sortby: 'most popular', goods: [
-      {id: uuidv4(), img: Dish3, name: 'Fish Burger', price: '19.99', score: '4.9', status: 'Supreme', time: '34min', count: 0, isLike: false, category: 'asian', sortby: 'recomended', count: 0},
-      {id: uuidv4(), img: Dish4, name: 'Nagets', price: '12.99', score: '5.0', status: 'Healthy', time: '24min', count: 0, isLike: true, category: 'asian', sortby: ['recomended', 'most popular'], count: 0},
+      {id: uuidv4(), img: Dish3, name: 'Fish Burger', price: '19.99', score: '4.9', status: 'Supreme', time: '34min', count: 0, isLike: false, category: 'asian', sortby: 'recomended', count: {value: 0}},
+      {id: uuidv4(), img: Dish4, name: 'Nagets', price: '12.99', score: '5.0', status: 'Healthy', time: '24min', count: 0, isLike: true, category: 'asian', sortby: ['recomended', 'most popular'], count: {value: 0}},
     ]},
     {id: uuidv4(), name: 'The Ice Queen', status: 'Trending', time: '11min', score: '5.0', isSave: false, img: IceCream, category: 'ice', sortby: 'fast delivery', goods: [
-      {id: uuidv4(), img: Strawberry, name: 'Strawberri', price: '12.99', score: '5.0', status: 'Healthy', time: '24min', count: 0, isLike: true, category: 'ice', sortby: ['recomended', 'most popular'], count: 0},
-      {id: uuidv4(), img: Chocolate, name: 'Chocolate', price: '12.99', score: '4.9', status: 'Trending', time: '23min', count: 0, isLike: false, category: 'ice', sortby: ['recomended', 'most popular'], count: 0},
-      {id: uuidv4(), img: Vanile, name: 'Valile', price: '12.99', score: '4.8', status: 'Supreme', time: '25min', count: 0, isLike: false, category: 'ice', sortby: 'recomended', count: 0},
+      {id: uuidv4(), img: Strawberry, name: 'Strawberri', price: '12.99', score: '5.0', status: 'Healthy', time: '24min', count: 0, isLike: true, category: 'ice', sortby: ['recomended', 'most popular'], count: {value: 0}},
+      {id: uuidv4(), img: Chocolate, name: 'Chocolate', price: '12.99', score: '4.9', status: 'Trending', time: '23min', count: 0, isLike: false, category: 'ice', sortby: ['recomended', 'most popular'], count: {value: 0}},
+      {id: uuidv4(), img: Vanile, name: 'Valile', price: '12.99', score: '4.8', status: 'Supreme', time: '25min', count: 0, isLike: false, category: 'ice', sortby: 'recomended', count: {value: 0}},
     ]},
     {id: uuidv4(), name: 'The Pizza Men', status: 'Supreme', time: '36min', score: '4.9', isSave: false, img: Pizza, category: 'pizza', sortby: 'most popular', goods: [
-      {id: uuidv4(), img: Peperoni, name: 'Peperoni Pizza', price: '12.99', score: '5.0', status: 'Supreme', time: '29min', count: 0, isLike: false, category: 'pizza', sortby: 'recomended', count: 0},
-      {id: uuidv4(), img: Ham, name: 'Ham2X Pizza', price: '17.99', score: '4.4', status: 'Healthy', time: '35min', count: 0, isLike: false, category: 'pizza', sortby: '', count: 0},
-      {id: uuidv4(), img: Mushrooms, name: 'Mushrooms', price: '15.99', score: '4.5', status: 'Healthy', time: '30min', count: 0, isLike: false, category: 'pizza', sortby: '', count: 0},
-      {id: uuidv4(), img: Shrimp, name: 'Shrimp Pizza', price: '13.99', score: '4.9', status: 'Trending', time: '30min', count: 0, isLike: false, category: 'pizza', sortby: 'most popular', count: 0},
+      {id: uuidv4(), img: Peperoni, name: 'Peperoni Pizza', price: '12.99', score: '5.0', status: 'Supreme', time: '29min', count: 0, isLike: false, category: 'pizza', sortby: 'recomended', count: {value: 0}},
+      {id: uuidv4(), img: Ham, name: 'Ham2X Pizza', price: '17.99', score: '4.4', status: 'Healthy', time: '35min', count: 0, isLike: false, category: 'pizza', sortby: '', count: {value: 0}},
+      {id: uuidv4(), img: Mushrooms, name: 'Mushrooms', price: '15.99', score: '4.5', status: 'Healthy', time: '30min', count: 0, isLike: false, category: 'pizza', sortby: '', count: {value: 0}},
+      {id: uuidv4(), img: Shrimp, name: 'Shrimp Pizza', price: '13.99', score: '4.9', status: 'Trending', time: '30min', count: 0, isLike: false, category: 'pizza', sortby: 'most popular', count: {value: 0}},
     ]},
     {id: uuidv4(), name: 'Donut Magazin', status: 'Trending', time: '16min', score: '4.8', isSave: true, img: Donut, category: 'donut', sortby: ['recommended', 'fast delivery'], goods: [
-      {id: uuidv4(), img: ChocolateDonut, name: 'Chocolate Donut', price: '13.99', score: '4.9', status: 'Supreme', time: '10min', count: 0, isLike: false, category: 'donut', sortby: ['recomended', 'most popular'], count: 0},
-      {id: uuidv4(), img: VanileDonut, name: 'Vanile Donut', price: '13.99', score: '4.9', status: 'Supreme', time: '10min', count: 0, isLike: false, category: 'donut', sortby: ['recomended', 'most popular'], count: 0},
+      {id: uuidv4(), img: ChocolateDonut, name: 'Chocolate Donut', price: '13.99', score: '4.9', status: 'Supreme', time: '10min', count: 0, isLike: false, category: 'donut', sortby: ['recomended', 'most popular'], count: {value: 0}},
+      {id: uuidv4(), img: VanileDonut, name: 'Vanile Donut', price: '13.99', score: '4.9', status: 'Supreme', time: '10min', count: 0, isLike: false, category: 'donut', sortby: ['recomended', 'most popular'], count: {value: 0}},
     ]},
   ]
 
