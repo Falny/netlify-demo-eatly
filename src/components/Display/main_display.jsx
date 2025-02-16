@@ -21,9 +21,13 @@ const Display_main = (props) => {
             <div className="container">
                 <Quality Status={Status} restaurants={props.restaurants}/>
                 <Purchases />
+            </div>    
                 <Customer />
+            <div className="container">
                 <Subscribe />
-            </div>
+            </div>  
+                
+            
              
         </>
     )
